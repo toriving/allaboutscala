@@ -16,3 +16,8 @@ def calculateDonutCost2(donutName: String, quantity: Int, couponCode: String = "
   // make some calculations ...
   2.50 * quantity
 }
+
+println("\nStep 4: How to call a function with parameters that has default values")
+val totalCostWithDiscount = calculateDonutCost2("Glazed Donut", 4, "COUPON_12345")
+val totalCostWithoutDiscount = calculateDonutCost2("Glazed Donut", 4)
+

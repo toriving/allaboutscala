@@ -1,4 +1,4 @@
-package com.allaboutscala.chapter.one.tutorial_06
+package com.allaboutscala.chapter.one_intellij.tutorial_06
 
 object HelloWorldWithArguments extends App{
 

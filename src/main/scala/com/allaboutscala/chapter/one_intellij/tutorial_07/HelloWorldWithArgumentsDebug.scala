@@ -1,4 +1,4 @@
-package com.allaboutscala.chapter.one.tutorial_07
+package com.allaboutscala.chapter.one_intellij.tutorial_07
 
 object HelloWorldWithArgumentsDebug extends App{
 

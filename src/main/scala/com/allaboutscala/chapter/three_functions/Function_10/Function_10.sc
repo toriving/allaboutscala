@@ -24,3 +24,31 @@ println("\nStep 5: How to pass an Array to a function with variable number of ar
 val arrDonuts: Array[String] = Array("Coconut Donut")
 //printReport(arrDonuts)
 printReport(arrDonuts: _*)
+
+
+val o: Option[Int] = Some(2)
+
+o match {
+  case Some(x) => println(x)
+  case None =>
+}
+
+
+o match {
+  case x @ Some(_) => println(x)
+  case None =>
+}
+
+o match {
+  case Some(_) => println(o)
+  case None =>
+}
+
+
+val d@(c@Some(a), Some(b)) = (Some(1), Some(2))
+
+(Some(1), Some(2)) match { case d@(c@Some(a), Some(b)) => println(a, b, c, d) }
+
+for (x@Some(y) <- Seq(None, Some(1))) println(x, y)
+
+val List(x, xs @ _*) = List(1, 2, 3)

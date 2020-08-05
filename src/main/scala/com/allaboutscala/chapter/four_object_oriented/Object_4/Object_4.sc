@@ -8,6 +8,7 @@
 println("Step 1: How to define a simple class to represent a Donut object")
 class Donut(name: String, productCode: Option[Long] = None){
 
+
   def print = println(s"Donut name = $name, productCode = ${productCode.getOrElse(0)}, uuid = ${Donut.uuid}")
 
 }
